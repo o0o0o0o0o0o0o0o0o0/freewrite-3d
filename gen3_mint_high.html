@@ -8,6 +8,9 @@
 <body>
     <script>
         marmoset.embed( 'gen3_mint_high.mview', { width: 1500, height: 1500, autoStart: true, fullFrame: true, pagePreset: false } );
+        marmoset.noUserInterface = true;  
+        marmoset.fetchThumbnail( "gen3_mint_high.mview", onLoad, onError, img );
+        marmoset.transparentBackground = true;
     </script>
 </body>
 </html>
